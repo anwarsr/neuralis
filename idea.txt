@@ -1,0 +1,14 @@
+﻿Neuralis
+Deskripsi: 
+Neuralis adalah device praktis dengan fitur health-care dan penanganan ADHD yang digunakan pada kepala sebagai bandana cerdas. 
+Neuralis menggunakan sistem EEG (Elektroencefalogram) pada hardware yang mengintegrasikan beberapa sensor diantaranya: 
+1. Brain-Waves monitoring: menggunakan sensor EEG, dimana sensor ini mendeteksi aktivitas listrik pada sekumpulan neuron yang kemudian informasi dari sekumpulan neuron tersebut diubah dalam bentuk 256 data per detik.
+2. SpO2 Sensor: Sensor yang mendeteksi saturasi oksigen pada hemoglobin menggunakan cahaya merah (640 nm) dan inframerah (940 nm). Hemoglobin yang memiliki saturasi tinggi (HbO2) lebih banyak menyerap inframerah sedangkan hemoglobin yang memiliki saturasi oksigen rendah (Hb) lebih banyak menyerap cahaya merah.
+3. Heartbeat sensor: Menggunakan sensor photoplethysmography (PPG) atau sensor yang memancarkan cahaya terus menerus (biasa nya cahaya hijau karena lebih mudah diserap oleh darah) cahaya ini kemudian dipancarkan pada aliran darah dimana cahaya akan diserap oleh darah yang mengalir. Aliran yang variatif (Heart Rate Variable (HRV)) akan difilter oleh sistem PPG.
+Supaya pengguna mudah dalam mengoperasionalkan Neuralis, maka kami menyediakan software yang dapat membaca dan mengolah data dari hardware. Software kami memiliki beberapa fitur diantaranya: 
+1. Brain waves monitoring: Fitur utama software Neuralis adalah monitoring pada gelombang otak melalui real time data yang diterima oleh sistem EEG dari hardware. Fitur ini memungkingkan pengguna memantau kondisi otak pengguna secara langsung pada detik itu juga.
+2. Multi parametric analysis: Berdasarkan Brain-Waves monitoring, SpO2 sensor, dan Heartbeat sensor, didapatkan hasil data mentah yang kemudian dianalisis untuk menunjukan hasil kesehatan pengguna
+3. Neuro feedback based on music: Setelah keseluruhan data didapat, Ai yang terintegrasi kemudian menganalisa tipe musik apa yang cocok untuk kondisi pengguna. Pengguna juga bisa memberikan referensi lagu yang disukai sehingga hasil lebih signifikan.
+4. Management ADHD: Melalui pelacakan pola gelombang otak dan respons fisiologis, Neuralis membantu mengidentifikasi pemicu distraksi atau hiperaktif, serta memberikan intervensi berbasis data untuk meningkatkan regulasi diri.
+5. Mental health analysis: Neuralis juga menggunakan trend data dari berbagai sensor agar memudahkan analisis kesehatan pengguna.
+6. AI Consultant: Neuralis juga mengintegrasikan AI sebagai teman/sarana konsultasi pengguna, sehingga mereka bisa melakukan tanya jawab dengan AI
