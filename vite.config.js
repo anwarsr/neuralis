@@ -1,18 +1,22 @@
 import { defineConfig } from 'vite';
-import laravel from 'laravel-vite-plugin';
 import tailwindcss from '@tailwindcss/vite';
+import { resolve } from 'path';
 
 export default defineConfig({
-    plugins: [
-        laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
-            refresh: true,
-        }),
-        tailwindcss(),
-    ],
-    server: {
-        watch: {
-            ignored: ['**/storage/framework/views/**'],
+    plugins: [tailwindcss()],
+    root: 'src',
+    publicDir: '../src/public',
+    build: {
+        outDir: '../dist',
+        emptyOutDir: true,
+        rollupOptions: {
+            input: {
+                main: resolve(__dirname, 'src/index.html'),
+                fitur: resolve(__dirname, 'src/fitur.html'),
+                tentang: resolve(__dirname, 'src/tentang.html'),
+                faq: resolve(__dirname, 'src/faq.html'),
+                kontak: resolve(__dirname, 'src/kontak.html'),
+            },
         },
     },
 });

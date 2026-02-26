@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+
+@source '../**/*.html';
+@source '../**/*.js';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+
+    /* Neuralis Brand Colors */
+    --color-primary: oklch(0.65 0.25 255);
+    --color-primary-light: oklch(0.78 0.18 255);
+    --color-primary-dark: oklch(0.45 0.25 255);
+    --color-accent: oklch(0.72 0.19 185);
+    --color-accent-light: oklch(0.82 0.14 185);
+    --color-neural: oklch(0.58 0.22 290);
+    --color-neural-light: oklch(0.72 0.16 290);
+    --color-surface: oklch(0.985 0.005 260);
+    --color-surface-dark: oklch(0.13 0.02 260);
+    --color-surface-darker: oklch(0.09 0.02 260);
+    --color-glow-blue: oklch(0.65 0.25 255 / 0.4);
+    --color-glow-cyan: oklch(0.72 0.19 185 / 0.4);
+    --color-glow-purple: oklch(0.58 0.22 290 / 0.3);
+}
+
+/* AOS overrides */
+[data-aos] { pointer-events: none; }
+[data-aos].aos-animate { pointer-events: auto; }
+
+/* Custom glow utilities */
+@utility glow-blue {
+    box-shadow: 0 0 20px var(--color-glow-blue), 0 0 60px var(--color-glow-blue);
+}
+@utility glow-cyan {
+    box-shadow: 0 0 20px var(--color-glow-cyan), 0 0 60px var(--color-glow-cyan);
+}
+@utility glow-purple {
+    box-shadow: 0 0 20px var(--color-glow-purple), 0 0 60px var(--color-glow-purple);
+}
+@utility glow-blue-sm {
+    box-shadow: 0 0 10px var(--color-glow-blue), 0 0 30px var(--color-glow-blue);
+}
+@utility text-glow-blue {
+    text-shadow: 0 0 10px var(--color-glow-blue), 0 0 30px var(--color-glow-blue);
+}
+@utility text-glow-cyan {
+    text-shadow: 0 0 10px var(--color-glow-cyan), 0 0 30px var(--color-glow-cyan);
+}
+
+/* Glassmorphism */
+@utility glass {
+    background: oklch(1 0 0 / 0.08);
+    backdrop-filter: blur(16px);
+    border: 1px solid oklch(1 0 0 / 0.12);
+}
+@utility glass-dark {
+    background: oklch(0 0 0 / 0.3);
+    backdrop-filter: blur(16px);
+    border: 1px solid oklch(1 0 0 / 0.08);
+}
+
+/* Grid pattern */
+@utility bg-grid {
+    background-image:
+        linear-gradient(oklch(1 0 0 / 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, oklch(1 0 0 / 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+}

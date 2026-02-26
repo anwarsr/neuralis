@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id" x-data x-init="$store.darkMode.init()">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQ — Neuralis</title>
+    <meta name="description" content="Pertanyaan yang sering diajukan tentang Neuralis, bandana cerdas untuk kesehatan otak.">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700&display=swap" rel="stylesheet"/>
+    <style>[x-cloak]{display:none!important}html{scroll-behavior:smooth}</style>
+  <script type="module" crossorigin src="/assets/app-NwRsX7oL.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/app-QWicjw4w.css">
+</head>
+<body data-page="faq" class="bg-surface text-neutral-800 dark:bg-surface-dark dark:text-neutral-100 antialiased transition-colors duration-300 overflow-x-hidden">
+
+<div id="app-navbar"></div>
+
+<main>
+    <!-- Hero -->
+    <section class="relative min-h-[50vh] flex items-center pt-24 lg:pt-32 pb-16 overflow-hidden">
+        <div class="absolute inset-0 bg-grid opacity-40 dark:opacity-20"></div>
+        <div class="absolute top-1/3 left-1/3 w-80 h-80 bg-accent/10 dark:bg-accent/5 rounded-full blur-3xl"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 data-aos="fade-up" class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-neutral-900 dark:text-white">
+                Frequently Asked <span class="bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">Questions</span>
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="100" class="mt-6 text-lg text-neutral-500 dark:text-neutral-400 max-w-2xl mx-auto">
+                Temukan jawaban atas pertanyaan yang sering diajukan tentang Neuralis.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Items -->
+    <section class="py-20 lg:py-28 relative">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div x-data="{ open: false }" data-aos="fade-up" class="rounded-2xl border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/5 overflow-hidden transition-all duration-300" :class="open ? 'shadow-lg shadow-primary/5 dark:shadow-primary/10 border-primary/20 dark:border-primary/30' : ''">
+                    <button @click="open = !open" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-semibold text-neutral-900 dark:text-white pr-4">Apa itu Neuralis?</span>
+                        <svg class="w-5 h-5 shrink-0 text-primary transition-transform duration-300" :class="open && 'rotate-180'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div x-show="open" x-collapse x-cloak class="px-6 pb-6">
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Neuralis merupakan produk inovasi berupa bandana pintar yang bertujuan untuk memantau aktivitas otak secara real-time melalui gelombang listrik otak yang memiliki fitur health-care dan penanganan ADHD.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div x-data="{ open: false }" data-aos="fade-up" data-aos-delay="50" class="rounded-2xl border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/5 overflow-hidden transition-all duration-300" :class="open ? 'shadow-lg shadow-primary/5 dark:shadow-primary/10 border-primary/20 dark:border-primary/30' : ''">
+                    <button @click="open = !open" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-semibold text-neutral-900 dark:text-white pr-4">Sensor apa saja yang digunakan?</span>
+                        <svg class="w-5 h-5 shrink-0 text-primary transition-transform duration-300" :class="open && 'rotate-180'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div x-show="open" x-collapse x-cloak class="px-6 pb-6">
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Neuralis menggunakan tiga sensor utama: EEG (Electroencephalogram) untuk membaca gelombang otak, SpO2 untuk mengukur saturasi oksigen dalam darah, dan PPG (Photoplethysmography) untuk memantau detak jantung dan HRV.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div x-data="{ open: false }" data-aos="fade-up" data-aos-delay="100" class="rounded-2xl border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/5 overflow-hidden transition-all duration-300" :class="open ? 'shadow-lg shadow-primary/5 dark:shadow-primary/10 border-primary/20 dark:border-primary/30' : ''">
+                    <button @click="open = !open" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-semibold text-neutral-900 dark:text-white pr-4">Apakah Neuralis nyaman dipakai?</span>
+                        <svg class="w-5 h-5 shrink-0 text-primary transition-transform duration-300" :class="open && 'rotate-180'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div x-show="open" x-collapse x-cloak class="px-6 pb-6">
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Ya! Neuralis didesain dengan bahan breathable fabric yang ringan dan nyaman, serta bentuk bandana yang fashionable. Bisa dipakai seharian untuk monitoring 24/7.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div x-data="{ open: false }" data-aos="fade-up" data-aos-delay="150" class="rounded-2xl border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/5 overflow-hidden transition-all duration-300" :class="open ? 'shadow-lg shadow-primary/5 dark:shadow-primary/10 border-primary/20 dark:border-primary/30' : ''">
+                    <button @click="open = !open" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-semibold text-neutral-900 dark:text-white pr-4">Bagaimana cara menghubungkan Neuralis?</span>
+                        <svg class="w-5 h-5 shrink-0 text-primary transition-transform duration-300" :class="open && 'rotate-180'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div x-show="open" x-collapse x-cloak class="px-6 pb-6">
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Neuralis terhubung ke smartphone Anda melalui Bluetooth 5.0 Low Energy. Cukup buka aplikasi Neuralis dan perangkat akan terdeteksi secara otomatis untuk pairing.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div x-data="{ open: false }" data-aos="fade-up" data-aos-delay="200" class="rounded-2xl border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/5 overflow-hidden transition-all duration-300" :class="open ? 'shadow-lg shadow-primary/5 dark:shadow-primary/10 border-primary/20 dark:border-primary/30' : ''">
+                    <button @click="open = !open" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-semibold text-neutral-900 dark:text-white pr-4">Berapa lama baterai Neuralis bertahan?</span>
+                        <svg class="w-5 h-5 shrink-0 text-primary transition-transform duration-300" :class="open && 'rotate-180'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div x-show="open" x-collapse x-cloak class="px-6 pb-6">
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Neuralis memiliki daya tahan baterai hingga 12 jam pemakaian aktif. Pengisian daya menggunakan USB-C fast charging yang bisa penuh dalam waktu singkat.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div x-data="{ open: false }" data-aos="fade-up" data-aos-delay="250" class="rounded-2xl border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/5 overflow-hidden transition-all duration-300" :class="open ? 'shadow-lg shadow-primary/5 dark:shadow-primary/10 border-primary/20 dark:border-primary/30' : ''">
+                    <button @click="open = !open" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-semibold text-neutral-900 dark:text-white pr-4">Siapa yang bisa menggunakan Neuralis?</span>
+                        <svg class="w-5 h-5 shrink-0 text-primary transition-transform duration-300" :class="open && 'rotate-180'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div x-show="open" x-collapse x-cloak class="px-6 pb-6">
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Neuralis cocok untuk siapa saja yang ingin memantau kesehatan otak — pelajar, pekerja profesional, orang tua, dan terutama penderita ADHD yang membutuhkan monitoring dan intervensi berbasis data.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div x-data="{ open: false }" data-aos="fade-up" data-aos-delay="300" class="rounded-2xl border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/5 overflow-hidden transition-all duration-300" :class="open ? 'shadow-lg shadow-primary/5 dark:shadow-primary/10 border-primary/20 dark:border-primary/30' : ''">
+                    <button @click="open = !open" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-semibold text-neutral-900 dark:text-white pr-4">Apakah data kesehatan saya aman?</span>
+                        <svg class="w-5 h-5 shrink-0 text-primary transition-transform duration-300" :class="open && 'rotate-180'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div x-show="open" x-collapse x-cloak class="px-6 pb-6">
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Keamanan data adalah prioritas utama kami. Semua data dienkripsi end-to-end dan disimpan secara lokal di perangkat Anda. Data hanya dibagikan jika Anda secara eksplisit memilih untuk mengekspornya.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div x-data="{ open: false }" data-aos="fade-up" data-aos-delay="350" class="rounded-2xl border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/5 overflow-hidden transition-all duration-300" :class="open ? 'shadow-lg shadow-primary/5 dark:shadow-primary/10 border-primary/20 dark:border-primary/30' : ''">
+                    <button @click="open = !open" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-semibold text-neutral-900 dark:text-white pr-4">Bagaimana fitur ADHD Management bekerja?</span>
+                        <svg class="w-5 h-5 shrink-0 text-primary transition-transform duration-300" :class="open && 'rotate-180'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div x-show="open" x-collapse x-cloak class="px-6 pb-6">
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Neuralis memantau pola gelombang otak dan respons fisiologis untuk mengidentifikasi pemicu distraksi. Sistem memberikan intervensi real-time berupa neurofeedback yang membantu pengguna melatih fokus dan regulasi diri.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 9 -->
+                <div x-data="{ open: false }" data-aos="fade-up" data-aos-delay="400" class="rounded-2xl border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/5 overflow-hidden transition-all duration-300" :class="open ? 'shadow-lg shadow-primary/5 dark:shadow-primary/10 border-primary/20 dark:border-primary/30' : ''">
+                    <button @click="open = !open" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-semibold text-neutral-900 dark:text-white pr-4">Apakah Neuralis bisa digunakan sebagai alat medis?</span>
+                        <svg class="w-5 h-5 shrink-0 text-primary transition-transform duration-300" :class="open && 'rotate-180'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div x-show="open" x-collapse x-cloak class="px-6 pb-6">
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Neuralis dirancang sebagai perangkat wellness dan monitoring, bukan sebagai pengganti alat medis profesional. Namun, data yang dihasilkan bisa digunakan sebagai referensi saat berkonsultasi dengan dokter.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 10 -->
+                <div x-data="{ open: false }" data-aos="fade-up" data-aos-delay="450" class="rounded-2xl border border-neutral-200 dark:border-white/10 bg-white dark:bg-white/5 overflow-hidden transition-all duration-300" :class="open ? 'shadow-lg shadow-primary/5 dark:shadow-primary/10 border-primary/20 dark:border-primary/30' : ''">
+                    <button @click="open = !open" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-semibold text-neutral-900 dark:text-white pr-4">Kapan Neuralis tersedia untuk dibeli?</span>
+                        <svg class="w-5 h-5 shrink-0 text-primary transition-transform duration-300" :class="open && 'rotate-180'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div x-show="open" x-collapse x-cloak class="px-6 pb-6">
+                        <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Neuralis saat ini masih dalam tahap pengembangan. Hubungi kami melalui halaman kontak untuk mendapatkan update terbaru tentang jadwal peluncuran dan pre-order.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 lg:py-28 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-accent/5 via-primary/5 to-neural/5 dark:from-accent/10 dark:via-primary/10 dark:to-neural/10"></div>
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="zoom-in">
+            <h2 class="text-3xl sm:text-4xl font-bold text-neutral-900 dark:text-white">Masih Punya Pertanyaan?</h2>
+            <p class="mt-4 text-neutral-500 dark:text-neutral-400 max-w-xl mx-auto">Jangan ragu untuk menghubungi tim kami. Kami siap membantu!</p>
+            <div class="mt-8">
+                <a href="/kontak" class="inline-flex items-center gap-2 px-8 py-4 rounded-2xl text-base font-semibold text-white bg-gradient-to-r from-primary to-accent shadow-xl shadow-primary/25 dark:shadow-primary/40 transition-all duration-300 hover:scale-105">
+                    Hubungi Kami
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div id="app-footer"></div>
+</body>
+</html>
