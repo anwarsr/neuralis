@@ -38,11 +38,7 @@ export function renderNavbar(activePage = 'home') {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16 lg:h-20">
             <a href="/" class="flex items-center gap-2 group">
-                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center glow-blue-sm">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                    </svg>
-                </div>
+                <img src="/neuralis.png" alt="Logo Neuralis" class="w-8 h-8 rounded-lg object-cover glow-blue-sm"/>
                 <span class="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Neuralis</span>
             </a>
             <div class="hidden lg:flex items-center gap-1">${desktopLinks}</div>
@@ -76,9 +72,7 @@ export function renderFooter() {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             <div class="lg:col-span-1">
                 <a href="/" class="flex items-center gap-2 mb-4">
-                    <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                    </div>
+                    <img src="/neuralis.png" alt="Logo Neuralis" class="w-8 h-8 rounded-lg object-cover"/>
                     <span class="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Neuralis</span>
                 </a>
                 <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Bandana cerdas dengan teknologi EEG untuk monitoring kesehatan otak, penanganan ADHD, dan analisis kesehatan mental.</p>
